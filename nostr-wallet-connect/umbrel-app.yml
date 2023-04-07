@@ -9,16 +9,20 @@ port: 58000
 description: >-
   Connect your LND node over Nostr.
   Zap directly from within supported Apps.
-developer: GetAlby
+
+  Nostr Wallet Connect uses the existing Nostr infrastructure to allow applications to communicate with lightning wallets. This makes it easy for developers to integrate and gives the users full flexibility on choice.
+  To learn more about the details have a look at the specs (NIP47).
+  Amethyst is the first Nostr Client to fully support Nostr Wallet Connect. More are working on support for it and are following shortly.
+developer: Alby
 website: http://getalby.com/
 submitter: kiwiidb
 submission: https://github.com/getAlby/nostr-wallet-connect
 repo: https://github.com/getAlby/nostr-wallet-connect
 support: https://github.com/getAlby/nostr-wallet-connect/issues
 gallery:
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://github.com/getAlby/umbrel-community-app-store/raw/master/images/landing.png
+  - https://github.com/getAlby/umbrel-community-app-store/raw/master/images/index.png
+  - https://github.com/getAlby/umbrel-community-app-store/raw/master/images/new.png
 releaseNotes: >-
   First release for Umbrel.
   - Manage sessions
