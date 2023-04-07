@@ -9,10 +9,6 @@ port: 58000
 description: >-
   Connect your LND node over Nostr.
   Zap directly from within supported Apps.
-
-  Nostr Wallet Connect uses the existing Nostr infrastructure to allow applications to communicate with lightning wallets. This makes it easy for developers to integrate and gives the users full flexibility on choice.
-  To learn more about the details have a look at the specs (NIP47).
-  Amethyst is the first Nostr Client to fully support Nostr Wallet Connect. More are working on support for it and are following shortly.
 developer: Alby
 website: http://getalby.com/
 submitter: kiwiidb
