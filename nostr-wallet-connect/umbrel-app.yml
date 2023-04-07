@@ -15,10 +15,7 @@ submitter: kiwiidb
 submission: https://github.com/getAlby/nostr-wallet-connect
 repo: https://github.com/getAlby/nostr-wallet-connect
 support: https://github.com/getAlby/nostr-wallet-connect/issues
-gallery:
-  - https://github.com/getAlby/umbrel-community-app-store/raw/master/nostr-wallet-connect/images/landing.png
-  - https://github.com/getAlby/umbrel-community-app-store/raw/master/nostr-wallet-connect/images/index.png
-  - https://github.com/getAlby/umbrel-community-app-store/raw/master/nostr-wallet-connect/images/new.png
+gallery: []
 releaseNotes: >-
   First release for Umbrel.
   - Manage sessions
