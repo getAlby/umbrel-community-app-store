@@ -2,11 +2,11 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      APP_HOST: getalby-wallet-connect_server_1
-      APP_PORT: 58001
+      APP_HOST: alby-nostr-wallet-connect_server_1
+      APP_PORT: 8080
+      PROXY_AUTH_ADD: "false"
   server:
-    image: ghcr.io/getalby/nostr-wallet-connect:feature-init-nostr-8611bed
-    init: true
+    image: ghcr.io/getalby/nostr-wallet-connect:feature-rpi-docker-0d2f1d0@sha256:089801052d367e84db5ad60f4d807081f63d6c2a44df4598f50a815c0782339d
     volumes:
       - ${APP_DATA_DIR}/data:/data
       - ${APP_LIGHTNING_NODE_DATA_DIR}:/lnd:ro
