@@ -9,6 +9,7 @@ port: 58000
 description: >-
   Connect your LND node over Nostr.
   Zap directly from within supported Apps.
+  Build for non- Raspberry Pi Umbrel installations
 developer: Alby
 website: http://getalby.com/
 submitter: kiwiidb
