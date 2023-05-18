@@ -6,7 +6,7 @@ services:
       APP_PORT: 8080
       PROXY_AUTH_ADD: "false"
   server:
-    image: ghcr.io/getalby/nostr-wallet-connect:main-1d1c41c@sha256:62b617010cc650c35659e4730b66042c01d2cbc79bbd15c93573853f93b283a3
+    image: ghcr.io/getalby/nostr-wallet-connect:main-163ed9f@sha256:73f734292c561afaaa131ae0cff8311b929e0c1daaf124379966510417a3152e
     volumes:
       - ${APP_DATA_DIR}/data:/data
       - ${APP_LIGHTNING_NODE_DATA_DIR}:/lnd:ro
