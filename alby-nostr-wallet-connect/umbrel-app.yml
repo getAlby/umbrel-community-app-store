@@ -2,14 +2,13 @@ manifestVersion: 1
 id: alby-nostr-wallet-connect
 name: Nostr Wallet Connect
 tagline: The power of the zaps at the tip of your fingers.
-icon: https://avatars.githubusercontent.com/u/90630635?s=200&v=4
-category: Development
-version: "0.0.1"
+icon: https://github.com/getAlby/umbrel-community-app-store/raw/master/nostr-wallet-connect/images/nwc_icon.svg
+category: Finance
+version: "0.1.0"
 port: 58000
 description: >-
   Connect your LND node over Nostr.
-  Zap directly from within supported Apps.
-  Build for regular Raspberry Pi Umbrel installations
+  Zap directly from within supported apps like Damus & Amethyst.
 developer: Alby
 website: http://getalby.com/
 submitter: kiwiidb
@@ -17,13 +16,11 @@ submission: https://github.com/getAlby/nostr-wallet-connect
 repo: https://github.com/getAlby/nostr-wallet-connect
 support: https://github.com/getAlby/nostr-wallet-connect/issues
 gallery:
-  - https://github.com/getAlby/umbrel-community-app-store/raw/master/nostr-wallet-connect/images/landing.png
-  - https://github.com/getAlby/umbrel-community-app-store/raw/master/nostr-wallet-connect/images/index.png
-  - https://github.com/getAlby/umbrel-community-app-store/raw/master/nostr-wallet-connect/images/new.png
+  - https://github.com/getAlby/umbrel-community-app-store/raw/master/nostr-wallet-connect/images/nwc_1.png
+  - https://github.com/getAlby/umbrel-community-app-store/raw/master/nostr-wallet-connect/images/nwc_2.png
+  - https://github.com/getAlby/umbrel-community-app-store/raw/master/nostr-wallet-connect/images/nwc_3.png
 releaseNotes: >-
-  First release for Umbrel.
-  - Manage sessions
-  - Generate & store private key if none is configured
+  - Budget & time-limited session support
 dependencies: []
 path: ""
 defaultUsername: ""
