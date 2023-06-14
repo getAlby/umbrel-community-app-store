@@ -9,8 +9,8 @@ port: 58000
 description: >-
   Connect your LND node over Nostr.
   Zap directly from within supported apps like Damus & Amethyst.
-  [Amethyst step-by-step guide](https://blog.getalby.com/native-zapping-in-amethyst/)
-  [Damus (only Testflight) video](https://streamable.com/bareih)
+  Amethyst step-by-step guide: https://blog.getalby.com/native-zapping-in-amethyst
+  Damus video guide: https://streamable.com/bareih
 developer: Alby
 website: http://getalby.com/
 submitter: kiwiidb
