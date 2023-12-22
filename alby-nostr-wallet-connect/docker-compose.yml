@@ -6,7 +6,7 @@ services:
       APP_PORT: 8080
       PROXY_AUTH_ADD: "false"
   server:
-    image: ghcr.io/getalby/nostr-wallet-connect:main-d4823a9@sha256:1c528b1b0127f7b6cf79fd6c4e32929d4bb8ad16086e6735ea06da97fce936cb
+    image: ghcr.io/getalby/nostr-wallet-connect:0.4.0
     volumes:
       - ${APP_DATA_DIR}/data:/data
       - ${APP_LIGHTNING_NODE_DATA_DIR}:/lnd:ro
@@ -16,6 +16,6 @@ services:
       LND_CERT_FILE: "/lnd/tls.cert"
       LND_MACAROON_FILE: "/lnd/data/chain/bitcoin/$APP_BITCOIN_NETWORK/admin.macaroon"
       DATABASE_URI: "/data/nostr-wallet-connect.db"
-      COOKIE_SECRET: "666"
+      COOKIE_SECRET: "742375a0f444d6de9c692aa83ac43c10"
     restart: on-failure
     stop_grace_period: 1m
