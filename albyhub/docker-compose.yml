@@ -1,0 +1,21 @@
+version: "3.7"
+services:
+  app_proxy:
+    environment:
+      APP_HOST: albyhub_server_1
+      APP_PORT: 8080
+      PROXY_AUTH_ADD: "false"
+  server:
+    image: ghcr.io/getalby/nostr-wallet-connect:v0.6.2@sha256:8fae28c26d2f1453478fc6688e49452930666548d84356e20d7230f14f22099b
+    volumes:
+      - ${APP_DATA_DIR}/data:/data
+      - ${APP_LIGHTNING_NODE_DATA_DIR}:/lnd:ro
+    environment:
+      LN_BACKEND_TYPE: "LND"
+      LND_ADDRESS: $APP_LIGHTNING_NODE_IP:$APP_LIGHTNING_NODE_GRPC_PORT
+      LND_CERT_FILE: "/lnd/tls.cert"
+      LND_MACAROON_FILE: "/lnd/data/chain/bitcoin/$APP_BITCOIN_NETWORK/admin.macaroon"
+      WORK_DIR: "/data/albyhub"
+      COOKIE_SECRET: "742375a0f444d6de9c692aa83ac43c10"
+    restart: on-failure
+    stop_grace_period: 1m
