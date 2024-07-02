@@ -1,4 +1,12 @@
-# Installation
+## Alby Umbrel Community App Store 
+
+Contains the original (discontinued) Alby Nostr Wallet Connect app and the new and actively developed [Alby Hub](https://github.com/getAlby/nostr-wallet-connect-next) to use your Umbrel lightning node in the NWC ecosystem.
+
+## Quick Start
+
+Add this community App Store (`https://github.com/getAlby/umbrel-community-app-store.git`) and install the Alby Hub from there. 
+
+## Installation
 
 To install this on your umbrel, you can add this repository through the Umbrel user interface as shown in the following demo:
 
@@ -16,6 +24,8 @@ sudo ~/umbrel/scripts/repo update
 To install an app from the app store
 ```
 sudo ~/umbrel/scripts/app install alby-nostr-wallet-connect
+
+sudo ~/umbrel/scripts/app install alby-albyhub
 ```
 
 To remove an app store:
