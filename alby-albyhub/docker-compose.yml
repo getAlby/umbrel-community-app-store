@@ -17,5 +17,6 @@ services:
       LND_MACAROON_FILE: "/lnd/data/chain/bitcoin/$APP_BITCOIN_NETWORK/admin.macaroon"
       WORK_DIR: "/data/albyhub"
       COOKIE_SECRET: "742375a0f444d6de9c692aa83ac43c10"
+      LOG_EVENTS: "true"
     restart: on-failure
     stop_grace_period: 1m
