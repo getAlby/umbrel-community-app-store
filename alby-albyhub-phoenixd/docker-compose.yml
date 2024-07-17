@@ -13,7 +13,7 @@ services:
       - ${APP_DATA_DIR}/data:/data
     environment:
       PHOENIXD_AUTHORIZATION: dcf0cf3501c04f97890e3bb3204f94f60d6b99d270cc8c40dfd390cced2f3c11
-      PHOENIXD_ADDRESS: http://alby-albyhub-phoenixd_phoenixd_1:9740
+      PHOENIXD_ADDRESS: http://phoenixd:9740
       LN_BACKEND_TYPE: "PHOENIX"
       WORK_DIR: "/data/albyhub"
       COOKIE_SECRET: "742375a0f444d6de9c692aa83ac43c10"
@@ -23,7 +23,6 @@ services:
 
   phoenixd:
       image: ghcr.io/sethforprivacy/phoenixd:latest
-      container_name: phoenixd
       volumes:
         - ${APP_DATA_DIR}/data:/data
       environment:
