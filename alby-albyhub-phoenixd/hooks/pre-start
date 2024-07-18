@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+APP_DATA_DIR="$(readlink -f $(dirname "${BASH_SOURCE[0]}")/..)/data"
+PHOENIXD_DATA_DIR="${APP_DATA_DIR}/phoenixd"
+ALBYHUB_DATA_DIR="${APP_DATA_DIR}/albyhub"
+
+[ ! -d "${PHOENIXD_DATA_DIR}" ] && mkdir -p "${PHOENIXD_DATA_DIR}" && chown 1000:1000 "${PHOENIXD_DATA_DIR}"
+[ ! -d "${ALBYHUB_DATA_DIR}" ] && mkdir -p "${ALBYHUB_DATA_DIR}" && chown 1000:1000 "${ALBYHUB_DATA_DIR}"
