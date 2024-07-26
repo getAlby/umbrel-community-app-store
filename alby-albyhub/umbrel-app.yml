@@ -4,7 +4,7 @@ name: Alby Hub
 tagline: The power of the zaps at the tip of your fingers.
 icon: https://raw.githubusercontent.com/getAlby/umbrel-community-app-store/master/alby-albyhub/images/icon.png
 category: Finance
-version: "1.1.0"
+version: "1.3.3"
 port: 59000
 description: >-
   AlbyHub
