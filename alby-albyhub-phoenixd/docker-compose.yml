@@ -6,7 +6,7 @@ services:
       APP_PORT: 8080
       PROXY_AUTH_ADD: "false"
   server:
-    image: ghcr.io/getalby/hub:v1.5.3
+    image: ghcr.io/getalby/hub:v1.6.0
     depends_on:
       - phoenixd
     volumes:
