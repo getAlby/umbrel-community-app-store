@@ -7,7 +7,6 @@ services:
       PROXY_AUTH_ADD: "false"
   server:
     image: ghcr.io/getalby/hub:v1.6.0
-    user: 1000:1000
     depends_on:
       - phoenixd
     volumes:
