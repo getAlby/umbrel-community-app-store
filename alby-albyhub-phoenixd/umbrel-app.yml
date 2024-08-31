@@ -2,8 +2,8 @@ manifestVersion: 1
 id: alby-albyhub-phoenixd
 name: Alby Hub with phoenixd
 tagline: Alby Hub with phoenixd as lightning node
-icon: https://raw.githubusercontent.com/getAlby/umbrel-community-app-store/master/alby-albyhub/images/icon.png
-category: Finance
+icon: https://raw.githubusercontent.com/getAlby/umbrel-community-app-store/master/alby-albyhub/images/icon.svg
+category: finance
 version: "1.6.0"
 port: 59001
 description: >-
