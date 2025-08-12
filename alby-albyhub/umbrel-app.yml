@@ -20,8 +20,7 @@ gallery:
   - https://raw.githubusercontent.com/getAlby/umbrel-community-app-store/master/alby-albyhub/images/store.png
   - https://raw.githubusercontent.com/getAlby/umbrel-community-app-store/master/alby-albyhub/images/node.png
 releaseNotes: >-
-dependencies:
-  - lightning
+
 path: ""
 defaultUsername: ""
 defaultPassword: ""
