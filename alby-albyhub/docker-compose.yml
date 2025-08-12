@@ -11,7 +11,7 @@ services:
       - ${APP_DATA_DIR}/data:/data
       - ${APP_LIGHTNING_NODE_DATA_DIR:-/data/empty-lnd}:/lnd:ro
     environment:
-      LN_BACKEND_TYPE: "LND"
+      LN_BACKEND_TYPE: ${APP_LIGHTNING_NODE_IP:+LND}
       LND_ADDRESS: $APP_LIGHTNING_NODE_IP:$APP_LIGHTNING_NODE_GRPC_PORT
       LND_CERT_FILE: "/lnd/tls.cert"
       LND_MACAROON_FILE: "/lnd/data/chain/bitcoin/$APP_BITCOIN_NETWORK/admin.macaroon"
