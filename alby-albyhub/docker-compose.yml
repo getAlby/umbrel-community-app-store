@@ -9,7 +9,7 @@ services:
     image: ghcr.io/getalby/hub:v1.18.5
     volumes:
       - ${APP_DATA_DIR}/data:/data
-      - ${APP_LIGHTNING_NODE_DATA_DIR:-${APP_DATA_DIR}/lnd-fallback}:/lnd:ro
+      - ${APP_LIGHTNING_NODE_DATA_DIR:-/data/empty-lnd}:/lnd:ro
     environment:
       LN_BACKEND_TYPE: "LND"
       LND_ADDRESS: $APP_LIGHTNING_NODE_IP:$APP_LIGHTNING_NODE_GRPC_PORT
