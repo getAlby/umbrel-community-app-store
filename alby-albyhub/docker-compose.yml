@@ -12,9 +12,9 @@ services:
       - ${APP_LIGHTNING_NODE_DATA_DIR:-${APP_DATA_DIR}/empty-lnd}:/lnd:ro
     environment:
       LN_BACKEND_TYPE: ${APP_LIGHTNING_NODE_IP:+LND}
-      LND_ADDRESS: $APP_LIGHTNING_NODE_IP:$APP_LIGHTNING_NODE_GRPC_PORT
-      LND_CERT_FILE: "/lnd/tls.cert"
-      LND_MACAROON_FILE: "/lnd/data/chain/bitcoin/$APP_BITCOIN_NETWORK/admin.macaroon"
+      LND_ADDRESS: ${APP_LIGHTNING_NODE_IP:+$APP_LIGHTNING_NODE_IP:$APP_LIGHTNING_NODE_GRPC_PORT}
+      LND_CERT_FILE: ${APP_LIGHTNING_NODE_IP:+/lnd/tls.cert}
+      LND_MACAROON_FILE: ${APP_LIGHTNING_NODE_IP:+/lnd/data/chain/bitcoin/$APP_BITCOIN_NETWORK/admin.macaroon}
       WORK_DIR: "/data/albyhub"
       COOKIE_SECRET: "742375a0f444d6de9c692aa83ac43c10"
       LOG_EVENTS: "true"
