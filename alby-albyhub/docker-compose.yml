@@ -11,10 +11,10 @@ services:
       - ${APP_DATA_DIR}/data:/data
       - ${UMBREL_ROOT}/app-data/lightning/data/lnd:/lnd:ro
     environment:
-      LN_BACKEND_TYPE: ${APP_ALBY_LN_BACKEND_TYPE:-LDK}
-      LND_ADDRESS: ${APP_ALBY_LIGHTNING_NODE_IP:-}:${APP_ALBY_LIGHTNING_NODE_GRPC_PORT:-}
+      LN_BACKEND_TYPE: $APP_ALBYHUB_LN_BACKEND
+      LND_ADDRESS: $APP_ALBYHUB_LND_ADDRESS
       LND_CERT_FILE: "/lnd/tls.cert"
-      LND_MACAROON_FILE: "/lnd/data/chain/bitcoin/$APP_BITCOIN_NETWORK/admin.macaroon"
+      LND_MACAROON_FILE: "/lnd/data/chain/bitcoin/mainnet/admin.macaroon"
       WORK_DIR: "/data/albyhub"
       COOKIE_SECRET: "742375a0f444d6de9c692aa83ac43c10"
       LOG_EVENTS: "true"
