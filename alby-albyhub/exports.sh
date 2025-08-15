@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 export APP_ALBYHUB_LN_BACKEND="LDK"
 export APP_ALBYHUB_LND_ADDRESS=""
 
