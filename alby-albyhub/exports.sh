@@ -13,7 +13,3 @@ if echo "$installed_apps" | grep --quiet 'lightning'; then
   export APP_ALBYHUB_LND_CERT_FILE="/lnd/tls.cert"
   export APP_ALBYHUB_LND_MACAROON_FILE="/lnd/data/chain/bitcoin/mainnet/admin.macaroon"
 fi
-
-echo "Final configuration:"
-echo "  APP_ALBYHUB_LN_BACKEND: $APP_ALBYHUB_LN_BACKEND"
-echo "  APP_ALBYHUB_LND_ADDRESS: $APP_ALBYHUB_LND_ADDRESS"
