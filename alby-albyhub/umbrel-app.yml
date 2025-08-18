@@ -14,6 +14,7 @@ submitter: Alby
 submission: https://github.com/getumbrel/umbrel-apps/pull/636
 repo: https://github.com/getAlby/hub
 support: https://github.com/getAlby/hub/issues
+dependencies: []
 gallery:
   - https://raw.githubusercontent.com/getAlby/umbrel-community-app-store/master/alby-albyhub/images/wallet.png
   - https://raw.githubusercontent.com/getAlby/umbrel-community-app-store/master/alby-albyhub/images/connections.png
