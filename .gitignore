@@ -1,5 +1,0 @@
-.DS_Store
-/.idea/
-docker-compose copy.yml
-mempool
-.gitignore
