@@ -9,12 +9,12 @@ services:
     image: ghcr.io/getalby/hub:v1.18.5
     volumes:
       - ${APP_DATA_DIR}/data:/data
-      - ${APP_LIGHTNING_NODE_DATA_DIR}:/lnd:ro
+      - ${UMBREL_ROOT}/app-data/lightning/data/lnd:/lnd:ro
     environment:
-      LN_BACKEND_TYPE: "LND"
-      LND_ADDRESS: $APP_LIGHTNING_NODE_IP:$APP_LIGHTNING_NODE_GRPC_PORT
-      LND_CERT_FILE: "/lnd/tls.cert"
-      LND_MACAROON_FILE: "/lnd/data/chain/bitcoin/$APP_BITCOIN_NETWORK/admin.macaroon"
+      LN_BACKEND_TYPE: ${APP_ALBYHUB_LN_BACKEND:-LDK}
+      LND_ADDRESS: ${APP_ALBYHUB_LND_ADDRESS}
+      LND_CERT_FILE: ${APP_ALBYHUB_LND_CERT_FILE}
+      LND_MACAROON_FILE: ${APP_ALBYHUB_LND_MACAROON_FILE}
       WORK_DIR: "/data/albyhub"
       COOKIE_SECRET: "742375a0f444d6de9c692aa83ac43c10"
       LOG_EVENTS: "true"
